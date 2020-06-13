@@ -1,0 +1,21 @@
+1-you must fisrst setup imagemagic library to be able to use the code
+2-open the file "astar.cpp" in your text editor
+3-to run the code you must provide the code with"
+    a-the dimensions of the map (m,n)
+    b-the type of input (either jpg image or a binary file)..exmples of poth are available in maps folder
+    c-start and goal postions
+    e-the direcotry of the input map image (must)
+    f-the directory of the input binary file (only if you chose binary as input type)
+4-set nodes_directory to the same direcotory of the "astar.cpp" 
+
+5-open the direcotory in a terminal and run "make" to build the code then run "./astar"
+
+6-close the image that would appear to start the code
+
+7-for simulation on gazebo roslaunch the launch file (diff_catbot_gazebo_perception_doublerobots) in the catbot_contorl package
+
+8-modifiy the directorys and include the model of map you need in the coresponding lines (a collection of gazebo maps is attached)
+
+9-run the node astar from  the as1 package 
+
+

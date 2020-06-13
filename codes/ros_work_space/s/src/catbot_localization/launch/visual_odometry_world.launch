@@ -1,0 +1,43 @@
+<launch>
+        <arg name="rviz_gui" default="False" />
+        <arg name="paused" default="false"/>
+        <arg name="use_sim_time" default="true"/>
+        <arg name="gazebo_gui" default="true"/>
+        <arg name="headless" default="false"/>
+        <arg name="debug" default="false"/>
+
+        <param name="robot_description" textfile="$(find catbot_description)/urdf/diff_catbot_perception.urdf"/>
+        <param name="use_gui" value="$(arg rviz_gui)" />
+
+        <rosparam file="$(find catbot_control)/config/diff_catbot_kinematics.yaml" command="load"/>
+        <include file="$(find catbot_localization)/launch/catbot_world.launch" />
+
+        <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model catbot -z 0.13" output="screen" />
+        <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/catbot" args="left_motor_controller right_motor_controller joint_state_controller"/>
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+                <remap from="/joint_states" to="/catbot/joint_states" />
+        </node>
+        <node name="rviz" pkg="rviz" type="rviz"/>
+        <node name="kinematic_model_teleop" pkg="catbot_control" type="kinematic_model" output="screen"/>
+        <node name="stereo_image_proc" pkg="stereo_image_proc" type="stereo_image_proc" ns="/catbot/front_camera" output="screen" />
+        <node name="stereo_odometer" pkg="viso2_ros" type="stereo_odometer" output="screen" args="stereo:=/catbot/front_camera  image:=image_rect_color">
+                <param name="odom_frame_id" value= "visual_odom" />
+                <param name="sensor_frame_id" value= "camera" />
+                <param name="base_link_frame_id" value= "base_footprint" />
+                <param name="max_features" value="5" />
+                <param name="bucket_width" value="50" />
+                <param name="bucket_height" value="50" />
+                <param name="nms_tau" value="20"/>
+                <param name="match_binsize" value="10"/>
+                <param name="match_radius" value="200" />
+                <param name="match_disp_tolerance" value="2" />
+                <param name="outlier_disp_tolerance" value="5" />
+                <param name="outlier_flow_tolerance" value="5" />
+                <param name="refinement" value="2" />
+                <param name="ransac_iters" value="1000" />
+                <param name="approximate_sync" value="True" />
+                <param name="queue_size" value="15" />
+        </node>
+        <node name="ground_truth" pkg="catbot_localization" type="ground_truth" output="screen" />
+        <node name="vodometry_path_generator" pkg="catbot_localization" type="vodometry_path_generator" />
+</launch>

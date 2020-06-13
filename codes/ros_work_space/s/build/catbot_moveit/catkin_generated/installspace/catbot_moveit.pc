@@ -1,0 +1,8 @@
+prefix=/home/ganam/s/install
+
+Name: catbot_moveit
+Description: Description of catbot_moveit
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/ganam/s/install/lib 
+Requires: 

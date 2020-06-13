@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "catbot_description")
+set(catbot_description_MAINTAINER "galileo <galileo@todo.todo>")
+set(catbot_description_DEPRECATED "")
+set(catbot_description_VERSION "0.1.0")
+set(catbot_description_BUILD_DEPENDS )
+set(catbot_description_RUN_DEPENDS )
+set(catbot_description_BUILDTOOL_DEPENDS "catkin")

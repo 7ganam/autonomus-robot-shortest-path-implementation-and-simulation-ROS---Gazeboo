@@ -1,0 +1,2 @@
+set(catbot_navigation_MESSAGE_FILES "/home/ganam/s/devel/share/catbot_navigation/msg/GoToGoalAction.msg;/home/ganam/s/devel/share/catbot_navigation/msg/GoToGoalActionGoal.msg;/home/ganam/s/devel/share/catbot_navigation/msg/GoToGoalActionResult.msg;/home/ganam/s/devel/share/catbot_navigation/msg/GoToGoalActionFeedback.msg;/home/ganam/s/devel/share/catbot_navigation/msg/GoToGoalGoal.msg;/home/ganam/s/devel/share/catbot_navigation/msg/GoToGoalResult.msg;/home/ganam/s/devel/share/catbot_navigation/msg/GoToGoalFeedback.msg")
+set(catbot_navigation_SERVICE_FILES "")

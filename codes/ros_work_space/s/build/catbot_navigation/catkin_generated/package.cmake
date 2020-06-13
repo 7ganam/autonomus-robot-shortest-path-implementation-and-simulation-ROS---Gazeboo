@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "catbot_navigation")
+set(catbot_navigation_MAINTAINER "galileo <galileo@todo.todo>")
+set(catbot_navigation_DEPRECATED "")
+set(catbot_navigation_VERSION "0.1.0")
+set(catbot_navigation_BUILD_DEPENDS "roscpp" "std_msgs" "actionlib_msgs" "actionlib")
+set(catbot_navigation_RUN_DEPENDS "roscpp" "std_msgs" "actionlib_msgs" "actionlib")
+set(catbot_navigation_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,2 @@
+as1:catbot_control:catbot_description:catbot_localization:catbot_mapping:catbot_moveit:catbot_navigation:robot_setup_tf
+-DCATKIN_DEVEL_PREFIX=/home/ganam/s/devel -DCMAKE_INSTALL_PREFIX=/home/ganam/s/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/ganam/s/devel
+
+Name: catbot_mapping
+Description: Description of catbot_mapping
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/ganam/s/devel/lib 
+Requires: 

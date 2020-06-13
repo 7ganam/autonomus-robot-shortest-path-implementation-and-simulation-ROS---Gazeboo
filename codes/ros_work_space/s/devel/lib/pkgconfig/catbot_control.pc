@@ -1,0 +1,8 @@
+prefix=/home/ganam/s/devel
+
+Name: catbot_control
+Description: Description of catbot_control
+Version: 0.1.0
+Cflags: -I/home/ganam/s/src/catbot_control/include
+Libs: -L/home/ganam/s/devel/lib 
+Requires: roscpp std_msgs sensor_msgs nav_msgs tf

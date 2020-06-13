@@ -1,0 +1,8 @@
+prefix=/home/ganam/s/install
+
+Name: catbot_navigation
+Description: Description of catbot_navigation
+Version: 0.1.0
+Cflags: -I/home/ganam/s/install/include
+Libs: -L/home/ganam/s/install/lib -lGoToGoalController
+Requires: actionlib_msgs

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "as1")
+set(as1_MAINTAINER "ganam <ganam@todo.todo>")
+set(as1_DEPRECATED "")
+set(as1_VERSION "0.0.0")
+set(as1_BUILD_DEPENDS "message_generation" "nav_msgs" "std_msgs" "geometry_msgs" "roscpp" "rospy")
+set(as1_RUN_DEPENDS "message_runtime" "nav_msgs" "std_msgs" "geometry_msgs" "roscpp" "rospy")
+set(as1_BUILDTOOL_DEPENDS "catkin")

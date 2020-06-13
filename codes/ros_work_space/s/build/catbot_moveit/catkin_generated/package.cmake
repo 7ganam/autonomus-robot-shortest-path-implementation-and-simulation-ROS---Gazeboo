@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "catbot_moveit")
+set(catbot_moveit_MAINTAINER "galileo <galileo@todo.todo>")
+set(catbot_moveit_DEPRECATED "")
+set(catbot_moveit_VERSION "0.1.0")
+set(catbot_moveit_BUILD_DEPENDS )
+set(catbot_moveit_RUN_DEPENDS )
+set(catbot_moveit_BUILDTOOL_DEPENDS "catkin")

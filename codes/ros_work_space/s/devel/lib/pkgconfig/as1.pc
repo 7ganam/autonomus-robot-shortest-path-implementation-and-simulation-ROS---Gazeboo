@@ -1,0 +1,8 @@
+prefix=/home/ganam/s/devel
+
+Name: as1
+Description: Description of as1
+Version: 0.0.0
+Cflags: -I/home/ganam/s/devel/include
+Libs: -L/home/ganam/s/devel/lib 
+Requires: nav_msgs roscpp rospy roscpp geometry_msgs std_msgs

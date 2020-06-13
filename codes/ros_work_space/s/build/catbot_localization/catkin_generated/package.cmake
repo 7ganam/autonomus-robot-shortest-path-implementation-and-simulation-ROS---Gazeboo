@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "catbot_localization")
+set(catbot_localization_MAINTAINER "galileo <galileo@todo.todo>")
+set(catbot_localization_DEPRECATED "")
+set(catbot_localization_VERSION "0.1.0")
+set(catbot_localization_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "sensor_msgs" "nav_msgs" "catbot_control" "tf")
+set(catbot_localization_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "sensor_msgs" "nav_msgs" "tf" "catbot_control")
+set(catbot_localization_BUILDTOOL_DEPENDS "catkin")
